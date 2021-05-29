@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.column {
+
+    margin: 5px 5px 5px 5px;
+    border: solid teal;
+}

@@ -28,5 +28,22 @@
 
 .row3 {
     display: flex;
+    border: maroon solid;
+}
+
+.major-column1 {
+    flex:1
+}
+
+.major-column2 {
+    flex: 8;
+}
+
+.mini-row3 {
+    display: flex;
+}
+
+.mini-column {
+    flex: 1;
 }
 

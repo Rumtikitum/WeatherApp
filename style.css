@@ -16,6 +16,7 @@
 .column {
     border: navy solid;
     margin: 5px 5px;
+    padding: 5px 5px;
 }
 
 .row2 {
@@ -45,5 +46,9 @@
 
 .mini-column {
     flex: 1;
+}
+
+.cityButton {
+    margin-top: 5px;
 }
 

@@ -37,35 +37,43 @@ button.addEventListener('click',function() {
                 console.log('Wind Speed: ' + windValue + ' MPH')
                 console.log(data)
 
-            var windValue1 = data['daily']['1']['wind_speed']
+            var windValue1 = data['daily']['1']['wind_speed'];
+            var windValue2 = data['daily']['2']['wind_speed'];
+            var windValue3 = data['daily']['3']['wind_speed'];
+            var windValue4 = data['daily']['4']['wind_speed'];
+            var windValue5 = data['daily']['5']['wind_speed'];
 
-                console.log(windValue1)
-                })}})
+            var humidValue1 = data['daily']['1']['humidity'];
+            var humidValue2 = data['daily']['2']['humidity'];
+            var humidValue3 = data['daily']['3']['humidity'];
+            var humidValue4 = data['daily']['4']['humidity'];
+            var humidValue5 = data['daily']['5']['humidity'];
+
+            var tempValue1K = data['daily']['1']['temp']['day'] - 273.15;
+            var tempValue2K = data['daily']['2']['temp']['day'] - 273.15;
+            var tempValue3K = data['daily']['3']['temp']['day'] - 273.15;
+            var tempValue4K = data['daily']['4']['temp']['day'] - 273.15;
+            var tempValue5K = data['daily']['5']['temp']['day'] - 273.15;
+
+            var tempValue1 = (tempValue1K * 9/5 + 32);
+            var tempValue2 = (tempValue2K * 9/5 + 32);
+            var tempValue3 = (tempValue3K * 9/5 + 32);
+            var tempValue4 = (tempValue4K * 9/5 + 32);
+            var tempValue5 = (tempValue5K * 9/5 + 32);
 
 
-                
-//                var windValue2 =
- //               var windValue3 =
-   //             var windValue4 =
-     //           var windValue5 =
-//
-  //              var humidValue1 =
-    //            var humidValue2 =
-      //          var humidValue3 =
-        //        var humidValue4 =
-          //      var humidValue5 =
-//
-  //              var tempValue1 =
-    //            var tempValue2 =
-      //          var tempValue3 =
-        //        var tempValue4 =
-          //      var tempValue5 =
-
-
-
-        
+                console.log(tempValue1)
+                })}})        
         });
         }
     })
     })
 
+
+    var today = moment().format('L');
+    var tomorrow = moment().add(1, 'days').format('L');
+    var dayTwo = moment().add(2, 'days').calendar()
+    var dayThree = moment().add(3, 'days').calendar()
+    var dayFour = moment().add(4, 'days').calendar()
+    var dayFive = moment().add(5, 'days').calendar()
+    console.log(tomorrow)

@@ -20,9 +20,8 @@ button.addEventListener('click',function() {
                 var lonValue = data['coord']['lon'];
                 var latValue = data['coord']['lat'];
                 
-                console.log(nameValue)
-                console.log(tempValue)
-                console.log(latValue)
+                console.log('City of ' + nameValue)
+                console.log('Temp: ' + tempValue + " degrees")
 
                 
 
@@ -33,11 +32,38 @@ button.addEventListener('click',function() {
                 response.json().then(data => {
                 var uvIndex = data['hourly']['0']['uvi'];
 
-                console.log(uvIndex)
+                console.log('UV Index: ' + uvIndex)
+                console.log('Humidity: ' + humidValue + '%')
+                console.log('Wind Speed: ' + windValue + ' MPH')
+                console.log(data)
 
-                console.log(humidValue)
-                console.log(windValue)
+            var windValue1 = data['daily']['1']['wind_speed']
+
+                console.log(windValue1)
                 })}})
+
+
+                
+//                var windValue2 =
+ //               var windValue3 =
+   //             var windValue4 =
+     //           var windValue5 =
+//
+  //              var humidValue1 =
+    //            var humidValue2 =
+      //          var humidValue3 =
+        //        var humidValue4 =
+          //      var humidValue5 =
+//
+  //              var tempValue1 =
+    //            var tempValue2 =
+      //          var tempValue3 =
+        //        var tempValue4 =
+          //      var tempValue5 =
+
+
+
+        
         });
         }
     })

@@ -89,6 +89,26 @@ button.addEventListener('click',function() {
                 temp1.textContent = tempValue1+' ';
                 wind1.textContent = windValue1+' ';
                 humid1.textContent = humidValue1+' ';
+
+                temp1.textContent = tempValue1+' ';
+                wind1.textContent = windValue1+' ';
+                humid1.textContent = humidValue1+' ';
+
+                temp1.textContent = tempValue1+' ';
+                wind1.textContent = windValue1+' ';
+                humid1.textContent = humidValue1+' ';
+
+                temp1.textContent = tempValue1+' ';
+                wind1.textContent = windValue1+' ';
+                humid1.textContent = humidValue1+' ';
+
+                temp1.textContent = tempValue1+' ';
+                wind1.textContent = windValue1+' ';
+                humid1.textContent = humidValue1+' ';
+
+                temp1.textContent = tempValue1+' ';
+                wind1.textContent = windValue1+' ';
+                humid1.textContent = humidValue1+' ';
                 })}})        
         });
         }
@@ -107,6 +127,9 @@ button.addEventListener('click',function() {
     currentDay.textContent = today
     tomorrowDay.textContent = tomorrow
     day2.textContent = dayTwo
+    day3.textContent = dayThree
+    day4.textContent = dayFour
+    day5.textContent = dayFive
 
     
 

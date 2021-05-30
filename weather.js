@@ -7,6 +7,8 @@ var wind = document.querySelector('#wind')
 var humid = document.querySelector('#humid')
 var uv = document.querySelector('#uv-index')
 
+var currentDay = document.querySelector('#currentDay')
+
 button.addEventListener('click',function() {
     var url = 'https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&APPID=66e66c24f276ae11a9d4b4b703bac3ae';
     fetch(url).then(function(response){
@@ -77,3 +79,8 @@ button.addEventListener('click',function() {
     var dayFour = moment().add(4, 'days').format('L');
     var dayFive = moment().add(5, 'days').format('L');
     console.log(dayTwo)
+
+    currentDay.textContent = today
+    
+
+

@@ -65,6 +65,12 @@ button.addEventListener('click',function() {
 
 
                 console.log(tempValue1)
+                
+                city.textContent = nameValue+" ";
+                temp.textContent = tempValue+' ';
+                wind.textContent = windValue+' ';
+                humid.textContent = humidValue+' ';
+                uv.textContent = uvIndex+' ';
                 })}})        
         });
         }

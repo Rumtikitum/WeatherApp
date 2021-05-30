@@ -6,63 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5 Day Weather</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
 </head>
 <body>
-    <div class="columns">
-        <div class="column">
-            <p>Hello. Please allow time for application to gather the request</p> 
+    <div class="row1">
+        <div class="column innerrow">
+            <p>Note: Please allow time for application to gather the request. Please spell city correctly. You may also put country abbreviation (ex. Los Angeles, US). Application will not work without the comma when us country abbreviation.</p> 
         </div>
     </div>
-    <div class="columns">
-        <div class="input column">
-            <input type="text" class="valueinput" id="input">
+    <div class="row2">
+        <h1 class="column banner">Weather Outlook</h1>
+    </div>
+    <div class="row3">
+        <div class="input major-column1 column">
+            <p></p>
+            <input type="text" class="valueinput" id="input" value="ex: 'Mexico City'">
             <input type="submit" value="Search" id="search">
         </div>        
-    </div>
 
-    <div class="columns">
-        <div class="display-panel column">
-            <h1>City: <span id="city"></span><span id="currentDay"></span> </h1>
-            <p>Temp: <span id="temp"></span></p>
-            <p>Wind: <span id="wind"></span> </p>
-            <p>Humidity: <span id="humid"></p>
-            <p>UV Index: <span id="uv-index"></p>
-        </div>
-    </div>
-    <div class="columns">
-        <p class="column">Future 5 Day Forecast</p>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <p id='tomorrow'></p>
-            <p>Temp: <span id="temp1"></span></p>
-            <p>Wind: <span id="wind1"></span> </p>
-            <p>Humidity: <span id="humid1"></p>
-        </div>
-        <div class="column">
-            <p id='day2'></p>
-            <p>Temp: <span id="temp2"></span></p>
-            <p>Wind: <span id="wind2"></span> </p>
-            <p>Humidity: <span id="humid2"></p>
-        </div>
-        <div class="column">
-            <p id='day3'></p>
-            <p>Temp: <span id="temp3"></span></p>
-            <p>Wind: <span id="wind3"></span> </p>
-            <p>Humidity: <span id="humid3"></p>
-        </div>
-        <div class="column">
-            <p id='day4'></p>
-            <p>Temp: <span id="temp4"></span></p>
-            <p>Wind: <span id="wind4"></span> </p>
-            <p>Humidity: <span id="humid4"></p>
-        </div>
-        <div class="column">
-            <p id='day5'></p>
-            <p>Temp: <span id="temp5"></span></p>
-            <p>Wind: <span id="wind5"></span> </p>
-            <p>Humidity: <span id="humid5"></p>
+        <div class="major-column2">
+            <div class="mini-row1 column">
+                <h3>City: <span id="city"></span><span id="currentDay"></span> </h3>
+                <p>Temp: <span id="temp"></span></p>
+                <p>Wind: <span id="wind"></span> </p>
+                <p>Humidity: <span id="humid"></p>
+                <p>UV Index: <span id="uv-index"></p>
+            </div>
+        
+            <div class="mini-row2">
+                <p class="column five-day-banner">Future 5 Day Forecast</p>
+            </div>
+            <div class="mini-row3">
+                <div class="column">
+                    <p id='tomorrow'></p>
+                    <p>Temp: <span id="temp1"></span></p>
+                    <p>Wind: <span id="wind1"></span> </p>
+                    <p>Humidity: <span id="humid1"></p>
+                </div>
+                <div class="column">
+                    <p id='day2'></p>
+                    <p>Temp: <span id="temp2"></span></p>
+                    <p>Wind: <span id="wind2"></span> </p>
+                    <p>Humidity: <span id="humid2"></p>
+                </div>
+                <div class="column">
+                    <p id='day3'></p>
+                    <p>Temp: <span id="temp3"></span></p>
+                    <p>Wind: <span id="wind3"></span> </p>
+                    <p>Humidity: <span id="humid3"></p>
+                </div>
+                <div class="column">
+                    <p id='day4'></p>
+                    <p>Temp: <span id="temp4"></span></p>
+                    <p>Wind: <span id="wind4"></span> </p>
+                    <p>Humidity: <span id="humid4"></p>
+                </div>
+                <div class="column">
+                    <p id='day5'></p>
+                    <p>Temp: <span id="temp5"></span></p>
+                    <p>Wind: <span id="wind5"></span> </p>
+                    <p>Humidity: <span id="humid5"></p>
+                </div>
+            </div>
         </div>
     </div>
 

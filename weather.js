@@ -9,11 +9,29 @@ var humid = document.querySelector('#humid')
 var uv = document.querySelector('#uv-index')
 
 //tomorrow
-var city1 = document.querySelector('#city1')
 var temp1 = document.querySelector('#temp1')
 var wind1 = document.querySelector('#wind1')
 var humid1 = document.querySelector('#humid1')
-var uv1 = document.querySelector('#uv-index1')
+
+//tomorrow + 1
+var temp2 = document.querySelector('#temp2')
+var wind2 = document.querySelector('#wind2')
+var humid2 = document.querySelector('#humid2')
+
+//tomorrow + 2
+var temp3 = document.querySelector('#temp3')
+var wind3 = document.querySelector('#wind3')
+var humid3 = document.querySelector('#humid3')
+
+//tomorrow + 3
+var temp4 = document.querySelector('#temp4')
+var wind4 = document.querySelector('#wind4')
+var humid4 = document.querySelector('#humid4')
+//tomorrow + 4
+var temp5 = document.querySelector('#temp5')
+var wind5 = document.querySelector('#wind5')
+var humid5 = document.querySelector('#humid5')
+
 
 var currentDay = document.querySelector('#currentDay')
 var tomorrowDay = document.querySelector('#tomorrow')
@@ -90,25 +108,21 @@ button.addEventListener('click',function() {
                 wind1.textContent = windValue1+' ';
                 humid1.textContent = humidValue1+' ';
 
-                temp1.textContent = tempValue1+' ';
-                wind1.textContent = windValue1+' ';
-                humid1.textContent = humidValue1+' ';
+                temp2.textContent = tempValue2+' ';
+                wind2.textContent = windValue2+' ';
+                humid2.textContent = humidValue2+' ';
 
-                temp1.textContent = tempValue1+' ';
-                wind1.textContent = windValue1+' ';
-                humid1.textContent = humidValue1+' ';
+                temp3.textContent = tempValue3+' ';
+                wind3.textContent = windValue3+' ';
+                humid3.textContent = humidValue3+' ';
 
-                temp1.textContent = tempValue1+' ';
-                wind1.textContent = windValue1+' ';
-                humid1.textContent = humidValue1+' ';
+                temp4.textContent = tempValue4+' ';
+                wind4.textContent = windValue4+' ';
+                humid4.textContent = humidValue4+' ';
 
-                temp1.textContent = tempValue1+' ';
-                wind1.textContent = windValue1+' ';
-                humid1.textContent = humidValue1+' ';
-
-                temp1.textContent = tempValue1+' ';
-                wind1.textContent = windValue1+' ';
-                humid1.textContent = humidValue1+' ';
+                temp5.textContent = tempValue5+' ';
+                wind5.textContent = windValue5+' ';
+                humid5.textContent = humidValue5+' ';
                 })}})        
         });
         }

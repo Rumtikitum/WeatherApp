@@ -72,8 +72,8 @@ button.addEventListener('click',function() {
 
     var today = moment().format('L');
     var tomorrow = moment().add(1, 'days').format('L');
-    var dayTwo = moment().add(2, 'days').calendar()
-    var dayThree = moment().add(3, 'days').calendar()
-    var dayFour = moment().add(4, 'days').calendar()
-    var dayFive = moment().add(5, 'days').calendar()
-    console.log(tomorrow)
+    var dayTwo = moment().add(2, 'days').format('L');
+    var dayThree = moment().add(3, 'days').format('L');
+    var dayFour = moment().add(4, 'days').format('L');
+    var dayFive = moment().add(5, 'days').format('L');
+    console.log(dayTwo)

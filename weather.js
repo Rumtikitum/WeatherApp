@@ -17,6 +17,11 @@ var uv1 = document.querySelector('#uv-index1')
 
 var currentDay = document.querySelector('#currentDay')
 var tomorrowDay = document.querySelector('#tomorrow')
+var day2 = document.querySelector('#day2')
+var day3 = document.querySelector('#day3')
+var day4 = document.querySelector('#day4')
+var day5 = document.querySelector('#day5')
+
 
 button.addEventListener('click',function() {
     var url = 'https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&APPID=66e66c24f276ae11a9d4b4b703bac3ae';
@@ -101,6 +106,8 @@ button.addEventListener('click',function() {
 
     currentDay.textContent = today
     tomorrowDay.textContent = tomorrow
+    day2.textContent = dayTwo
+
     
 
 

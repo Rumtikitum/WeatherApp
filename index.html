@@ -14,18 +14,32 @@
             <p>Hello. Please allow time for application to gather the request</p> 
         </div>
     </div>
-    <div class="input">
-        <input type="text" class="valueinput" id="input">
-        <input type="submit" value="Search" id="search">
+    <div class="columns">
+        <div class="input column">
+            <input type="text" class="valueinput" id="input">
+            <input type="submit" value="Search" id="search">
+        </div>        
     </div>
 
-    <div class="display-panel">
-
-        <h1>City: <span id="city"></span><span id="currentDay"></span> </h1>
-        <p>Temp: <span id="temp"></span></p>
-        <p>Wind: <span id="wind"></span> </p>
-        <p>Humidity: <span id="humid"></p>
-        <p>UV Index: <span id="uv-index"></p>
+    <div class="columns">
+        <div class="display-panel column">
+            <h1>City: <span id="city"></span><span id="currentDay"></span> </h1>
+            <p>Temp: <span id="temp"></span></p>
+            <p>Wind: <span id="wind"></span> </p>
+            <p>Humidity: <span id="humid"></p>
+            <p>UV Index: <span id="uv-index"></p>
+        </div>
+    </div>
+    <div class="columns">
+        <p class="column">5 Day Forecast</p>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <p id='tomorrow'></p>
+            <p>Temp: <span id="temp1"></span></p>
+            <p>Wind: <span id="wind1"></span> </p>
+            <p>Humidity: <span id="humid1"></p>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

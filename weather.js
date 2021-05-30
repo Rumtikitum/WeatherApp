@@ -1,13 +1,22 @@
 var button = document.querySelector('#search')
 var input = document.querySelector('#input')
 
+//today
 var city = document.querySelector('#city')
 var temp = document.querySelector('#temp')
 var wind = document.querySelector('#wind')
 var humid = document.querySelector('#humid')
 var uv = document.querySelector('#uv-index')
 
+//tomorrow
+var city1 = document.querySelector('#city1')
+var temp1 = document.querySelector('#temp1')
+var wind1 = document.querySelector('#wind1')
+var humid1 = document.querySelector('#humid1')
+var uv1 = document.querySelector('#uv-index1')
+
 var currentDay = document.querySelector('#currentDay')
+var tomorrowDay = document.querySelector('#tomorrow')
 
 button.addEventListener('click',function() {
     var url = 'https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&APPID=66e66c24f276ae11a9d4b4b703bac3ae';
@@ -71,6 +80,10 @@ button.addEventListener('click',function() {
                 wind.textContent = windValue+' ';
                 humid.textContent = humidValue+' ';
                 uv.textContent = uvIndex+' ';
+
+                temp1.textContent = tempValue1+' ';
+                wind1.textContent = windValue1+' ';
+                humid1.textContent = humidValue1+' ';
                 })}})        
         });
         }
@@ -87,6 +100,7 @@ button.addEventListener('click',function() {
     console.log(dayTwo)
 
     currentDay.textContent = today
+    tomorrowDay.textContent = tomorrow
     
 
 

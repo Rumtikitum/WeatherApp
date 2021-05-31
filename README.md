@@ -25,4 +25,4 @@
 
 ## Website Link
 
-[Weather App](https://https://rumtikitum.github.io/WeatherApp/)
+[Weather App](https://rumtikitum.github.io/WeatherApp/)
